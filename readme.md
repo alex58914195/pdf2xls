@@ -53,7 +53,7 @@ pdf2内容 | pdf2作者 | pdf2文件名
 
 # 其他注意事项
 1. excel文件只支持xlsx格式，xls不支持，pdf文件可以是扫描件，但要保证内容是可读的，文件的排版越简单越好，本项目对图片、表格、公式的支持未经测试（我自己用不上），如对此方面有要求请结合[MinerU项目](https://github.com/opendatalab/MinerU)调整代码。如果xlsx不存在本代码不会运行，如果xlsx存在但为空表，则会在表内写入所有文件夹内文件名称。
-2. 受制于ollama本地部署模型能力，读取的pdf转成的文本字数如果太多，可能会导致大模型幻觉。经测试，在Qwen2.5:7b模型下，单个pdf文件在5000字以下时本程序使用效果尚可。
+2. 受制于ollama本地部署模型能力，读取的pdf转成的文本字数如果太多，可能会导致大模型幻觉。
 3. 本项目为开源免费使用，不得用于商业用途，请注意遵守相关法律法规。
 
 ***
@@ -117,5 +117,5 @@ The process is similar to Windows but has not been explicitly tested. Ensure fil
 
 # Additional Notes
 1. The Excel file must be in XLSX format; XLS is not supported. PDFs can include scanned documents but must have readable content. Simpler layouts work better. Support for images, tables, or formulas is untested. For such use cases, consider modifying the code with the MinerU Project. If the XLSX file is missing, the program will not run. If it exists but is empty, the program will populate it with filenames from the folder.
-2. Due to limitations of locally deployed Ollama models, processing PDFs with extensive text may lead to hallucination issues. Testing with the Qwen2.5:7b model shows the program performs well with PDFs under 5,000 characters(Chinese).
+2. Due to limitations of locally deployed Ollama models, processing PDFs with extensive text may lead to hallucination issues.
 3. This project is open-source and free for non-commercial use. Please comply with all relevant laws and regulations.
